@@ -1,0 +1,29 @@
+.card{
+    background: #3128b1;
+    border-radius: 10px;
+    height: 400px;
+}
+
+.card-heading{
+    color:#ff91d1;
+    font-weight: bold !important;
+    font-size: 60px;
+    margin-top:40px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+.card-subheading{
+    color:#ffffff;
+    font-weight: bold !important;
+    font-size: 30px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.hero{
+    height:400px;
+    width:400px;
+    margin-left:50px;
+}
