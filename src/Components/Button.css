@@ -17,7 +17,7 @@
     
 }
 .btn--outline{
-    background-color:#372cdd;
+    background-color:#9B59B6;
     color:rgb(240, 240, 240);
     padding:8px 20px;
     transition: all 0.5s ease-out;
@@ -48,7 +48,7 @@
 }
 .btn--large:hover, .btn--medium:hover, .btn--mobile:hover{
     transition: all 0.3s ease-out;
-    background: rgb(72, 34, 245);
+    background: rgb(194, 110, 228);
     color:#fff;
 }
 

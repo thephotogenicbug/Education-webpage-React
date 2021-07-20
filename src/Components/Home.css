@@ -1,11 +1,12 @@
 .card{
-    background: #3128b1;
-    border-radius: 10px;
+    background: #9B59B6;
+    border-radius: 5px;
     height: 400px;
+    margin-top: 20px;
 }
 
 .card-heading{
-    color:#ff91d1;
+    color:#fce9f4;
     font-weight: bold !important;
     font-size: 60px;
     margin-top:40px;
@@ -26,4 +27,24 @@
     height:400px;
     width:400px;
     margin-left:50px;
+    margin-top: 20px;
 }
+
+@media screen and (min-width:1px) and (max-width:600px){
+    .card-heading{
+        color:#fce9f4;
+        font-weight: bold !important;
+        font-size: 40px;
+        margin-top:50px;
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+    }
+    .hero{
+        height:300px;
+        width:300px;
+        margin-left:40px;
+    }
+    
+    
+    }

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css';
-import Hero from '../assets/hero.svg'
+import Hero from '../assets/hero_img.svg'
 const Home = () =>{
 
 
