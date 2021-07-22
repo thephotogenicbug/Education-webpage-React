@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from 'react'
 import {Link} from 'react-router-dom';
-import {FaBars, FaTimes, FaUniversity,} from 'react-icons/fa';
-import {Button} from './Button';
+import {FaBars, FaTimes} from 'react-icons/fa';
+import {Button} from '../Buttons/Button';
 import './Navbar.css';
-import {IconContext, icons} from 'react-icons/lib';
+import {IconContext} from 'react-icons/lib';
 import Logo from '../assets/logo.png'
 
 
@@ -34,7 +34,7 @@ function Navbar() {
            <div className='navbar'>
            <div className='navbar-container container'>
             <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-             <img src={Logo} height="250px" />
+             <img src={Logo} height="250px" alt="Eduprov logo" title="Eduprov logo"/>
             </Link> 
             <div className='menu-icon' onClick={handClick}>
                 {click ? <FaTimes/> : <FaBars/>}
@@ -45,18 +45,21 @@ function Navbar() {
                        Home
                    </Link>
                 </li>
-              
-              
+                <li className="nav-item">
+                   <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                       About
+                   </Link>
+                </li>
                 <li className="nav-btn">
                     {button ? (
                         <a href="tel:919008006228"  className='btn-link' style={{textDecoration:'none'}}>
                             <Button buttonStyle='btn--outline'>Call US</Button>
                         </a>
                     ): (
-                        <Link to='/sign-up' className='btn-link' onClick={closeMobileMenu}>
+                        <Link to='/sign-up' className='btn-link'  style={{textDecoration:'none'}} onClick={closeMobileMenu}>
                             <Button buttonStyle='btn--outline'
                              buttonSize='btn--mobile'>
-                            SIGNUP</Button>
+                            Call US</Button>
                         </Link>
                     )}
                 </li>

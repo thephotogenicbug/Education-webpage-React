@@ -1,19 +1,21 @@
-.card{
-    background: #9B59B6;
-    border-radius: 5px;
-    height: 400px;
-    margin-top: 20px;
-}
 
+.background{
+    background: #BF9ECD;
+    height: 550px;
+    margin-top: -10px;
+}
 .card-heading{
     color:#fce9f4;
     font-weight: bold !important;
-    font-size: 60px;
-    margin-top:40px;
+    font-size: 54px;
+    margin-top:100px;
     justify-content: space-between;
     align-items: center;
     display: flex;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 30px;
 }
+
 .card-subheading{
     color:#ffffff;
     font-weight: bold !important;
@@ -21,15 +23,21 @@
     justify-content: space-between;
     align-items: center;
     display: flex;
+    margin-left: 30px;
 }
 
 .hero{
     height:400px;
     width:400px;
-    margin-left:50px;
-    margin-top: 20px;
+    margin-left:165px;
+    margin-top: 70px;
+    border-radius: 15px;
 }
 
+
+.social{
+    margin-left: 20px;
+}
 @media screen and (min-width:1px) and (max-width:600px){
     .card-heading{
         color:#fce9f4;
@@ -41,9 +49,7 @@
         display: flex;
     }
     .hero{
-        height:300px;
-        width:300px;
-        margin-left:40px;
+        display: none;
     }
     
     
