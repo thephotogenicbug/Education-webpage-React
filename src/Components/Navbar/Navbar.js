@@ -7,7 +7,7 @@ import {IconContext} from 'react-icons/lib';
 import Logo from '../assets/logo.png'
 
 
-function Navbar() {
+const Navbar = () => {
     const [click, setClick]=useState(false);
     const [button , setButton]=useState(true);
 
@@ -46,8 +46,13 @@ function Navbar() {
                    </Link>
                 </li>
                 <li className="nav-item">
-                   <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                   <Link to='/about' className='nav-links' onClick={closeMobileMenu}>
                        About
+                   </Link>
+                </li>
+                <li className="nav-item">
+                   <Link to='/jain-university' className='nav-links' onClick={closeMobileMenu}>
+                       Jain University
                    </Link>
                 </li>
                 <li className="nav-btn">
@@ -56,11 +61,11 @@ function Navbar() {
                             <Button buttonStyle='btn--outline'>Call US</Button>
                         </a>
                     ): (
-                        <Link to='/sign-up' className='btn-link'  style={{textDecoration:'none'}} onClick={closeMobileMenu}>
+                        <a href="tel:919008006228" className='btn-link'  style={{textDecoration:'none'}} onClick={closeMobileMenu}>
                             <Button buttonStyle='btn--outline'
                              buttonSize='btn--mobile'>
                             Call US</Button>
-                        </Link>
+                        </a>
                     )}
                 </li>
             </ul>

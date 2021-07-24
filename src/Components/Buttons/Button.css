@@ -17,7 +17,7 @@
     
 }
 .btn--outline{
-    background-color:#AD52D3;
+    background-color:#496cbe;
     color:rgb(240, 240, 240);
     padding:8px 20px;
     transition: all 0.5s ease-out;
@@ -28,7 +28,7 @@
     height: 50px;
     width: 120px;
     border-radius: 5px;
-    box-shadow: 1px 5px 20px  #9B59B6;
+    box-shadow: 1px 5px 20px  #496cbe;
 }
 .btn--large{
     padding:12px 26px;
@@ -52,7 +52,7 @@
 }
 .btn--large:hover, .btn--medium:hover, .btn--mobile:hover{
     transition: all 0.3s ease-out;
-    background: rgb(194, 110, 228);
+    background: #688fe9;
     color:#fff;
 }
 
