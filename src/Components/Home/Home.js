@@ -3,11 +3,36 @@ import './Home.css';
 import Distance from '../Distance/Distance'
 import Services from '../Services/Services'
 import Footer from '../Footer/Footer'
+import {Helmet} from 'react-helmet'
 const Home = () =>{
 
 
     return(
       <>
+       <Helmet>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <link rel="canonical" href="#" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Best Distance Education in Bangalore</title>
+        <meta name="description" content="Best Distance Education in Bangalore Distance education can be defined as the education of students that does not necessitate the physical presence of students at the place viz. school. It is also termed as distance learning. " />
+        <meta name="keywords" content="" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="" />
+        <meta property="og:url" content="#" />
+        <meta property="og:site_name" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content="#" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@eduprov" />
+        <meta name="twitter:title" content="" />
+        <meta name="twitter:description" content="" />
+        <meta name="twitter:image" content="#" />
+        <meta name="twitter:url" content="https://twitter.com/eduprov" />
+        <link rel="shortcut icon" type="image/png" href="#"  alt="#" title="#"  />
+        <link rel="apple-touch-icon" href="#"  alt="" title="#" />
+        <meta name="author" content="thephotogenicbug"/>
+        </Helmet>
             <section className="background">
              <div className="container mt-2">
             <div className="row">
