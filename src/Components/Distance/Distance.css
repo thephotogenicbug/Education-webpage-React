@@ -4,29 +4,133 @@
     color:#496CBE;
     margin-top:20px
 }
-.card-subheading{
-    
-}
+
 
 .distance-card{
     margin-top: 170px;
     width: 250px;
-    margin-left:120px
+    margin-left:150px
 }
 
 .right-container{
     background: #496CBE;
-    height:510px;
-    border-radius: 5px;
+    height:440px;
 }
 .right-content{
-    margin-top: 60px;
+    margin-top: 40px;
     font-weight: bold;
 }
+
+.right-content-2{
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.right-content-3{
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.left-content{
+    margin-top: 50px;
+    font-weight: bold;
+
+}
+
+.left-content-2{
+    margin-top: 20px;
+    font-weight: bold;
+
+}
+.left-content-3{
+    margin-top: 20px;
+    font-weight: bold;
+}
+.left-container-2{
+    background: #496CBE;
+}
+
+.right-container-3{
+    background: #496CBE;
+    height:350px;
+}
+
+.left-container-4 {
+    background: #496CBE;
+}
+
+.right-container-5{
+    background: #496CBE;
+    height:330px;
+}
+
 @media screen and (max-width: 960px){
-    .girl{
-        height:250px;
-        margin-left:40px;
-        margin-bottom: 15px;
+    .card-heading{
+        font-size: 20px;
+        font-weight: bold;
+        color:#496CBE;
+        margin-top:20px;
+    }
+    .left-container{
+        height:300px
+    }
+    
+    .distance-card{
+        margin-top: 100px;
+        width: 250px;
+        margin-left:100px
+    }
+    
+    .right-container{
+        background: #496CBE;
+        height:440px;
+
+    }
+    .right-content{
+        margin-top: 40px;
+        font-weight: bold;
+    }
+    
+    .right-content-2{
+        margin-top: 20px;
+        font-weight: bold;
+    }
+    
+    .right-content-3{
+        margin-top: 20px;
+        font-weight: bold;
+    }
+    
+    .left-content{
+        margin-top: 50px;
+        font-weight: bold;
+    
+    }
+    
+    .left-content-2{
+        margin-top: 20px;
+        font-weight: bold;
+    
+    }
+    .left-content-3{
+        margin-top: 20px;
+        font-weight: bold;
+    }
+    .left-container-2{
+        background: #496CBE;
+    }
+    
+    .right-container-3{
+        background: #496CBE;
+        height:350px;
+    }
+    
+    .left-container-4 {
+        background: #496CBE;
+    }
+    
+    .right-container-5{
+        background: #496CBE;
+        height:460px;
     }
 }

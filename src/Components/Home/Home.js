@@ -15,7 +15,7 @@ const Home = () =>{
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <link rel="canonical" href="#" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>Best Distance Education in Bangalore</title>
+        <title>Best Distance Education in Bangalore - Eduprov</title>
         <meta name="description" content="Best Distance Education in Bangalore Distance education can be defined as the education of students that does not necessitate the physical presence of students at the place viz. school. It is also termed as distance learning. " />
         <meta name="keywords" content="" />
         <meta property="og:type" content="website" />
