@@ -50,11 +50,6 @@ const Navbar = () => {
                        About
                    </Link>
                 </li>
-                <li className="nav-item">
-                   <Link to='/jain-university' className='nav-links' onClick={closeMobileMenu}>
-                       Jain University
-                   </Link>
-                </li>
                 <li className="nav-btn">
                     {button ? (
                         <a href="tel:919008006228"  className='btn-link' style={{textDecoration:'none'}}>

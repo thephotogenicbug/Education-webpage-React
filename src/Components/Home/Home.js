@@ -4,6 +4,7 @@ import Distance from '../Distance/Distance'
 import Services from '../Services/Services'
 import Footer from '../Footer/Footer'
 import {Helmet} from 'react-helmet'
+import Shape from '../assets/shape.png'
 const Home = () =>{
 
 
@@ -33,71 +34,49 @@ const Home = () =>{
         <link rel="apple-touch-icon" href="#"  alt="" title="#" />
         <meta name="author" content="thephotogenicbug"/>
         </Helmet>
-            <section className="background">
-             <div className="container mt-2">
-            <div className="row">
-                <div className="col-md-6">
-                   <h1 className="card-heading">Best Distance Education <br/>in Bangalore</h1>
-                   <h2 className="card-subheading">Keep your studies on track with Distance Education</h2>
-                  <div className="social">
-                  <i className="fab fa-instagram  m-2 text-white fa-2x" ></i>
-                   <i className="fab fa-facebook m-2 text-white fa-2x"></i>
-                   <i className="fab fa-linkedin m-2 text-white fa-2x"></i>
-                   <i className="fab fa-twitter m-2 text-white fa-2x"></i>
-                  </div>
-                </div>
-                <div className="col-md-4 mt-5 contact-form">
-                <div className="card " >
-                        <div className="card-body">
-                        <p className="contact-form-header text-primary"  style={{fontWeight:'bold'}}>Get a callback from an Education Counsellor</p>
-                        <p>Ask an experienced education counsellor to shortlist a program</p>
-                        <div className="form-group m-1 mb-3">
-                          <input type="text" 
-                          className="form-control"
-                          placeholder="Enter Your Name"
-                          />
-                        </div>
-                        <div className="form-group m-1 mb-3">
-                            <input type="text"
-                            className="form-control"
-                            placeholder="Mobile No."/>
-                        </div>
-                        <div className="form-group m-1 mb-3">
-                            <select className="form-control">
-                                <option>Choose Course</option>
-                                <option></option>
-                                <option></option>
-                                <option></option>
-                                <option></option>
-                                <option></option>
-                                <option></option>
-                            </select>
-                        </div>
-                        <div className="form-group m-1 ">
-                            <textarea className="form-control" placeholder="Message"></textarea>
-                        </div>
-
-                        <div className="form-group">
-                            <button className="btn btn-primary">
-                                Enquire Now
-                            </button>
-                        </div>
-                         
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <section className="background">
+             <div className="container">
+                 <div className="row">
+                     <div className="col-md-6">
+                         <h1 className="heading">Best Distance Education in Bangalore</h1>
+                          <img src={Shape} className="shape"/>
+                         <h2 className="sub-heading">Keep your studies on track <br/>with Distance Education</h2>
+                     </div>
+                     <div className="col-md-4 contact-form">
+                         <div className="card">
+                             <div className="card-body">
+                            
+                            <p className="paragraph">Get a callback from an Education <br/> Counsellor</p>
+                            <label className="card-label">Ask an experienced education counsellor to shortlist a program</label>
+                                <div className="form-group">
+                                    <input type="text" className="form-control" placeholder="Name" />
+                                </div>
+                                <div className="form-group">
+                                    <input type="text" className="form-control" placeholder="Mobile No" />
+                                </div>
+                                <div className="form-group">
+                                    <input type="text" className="form-control" placeholder="Course" />
+                                </div>
+                                <div className="form-group">
+                                   <textarea className="form-control" placeholder="Message"></textarea>
+                                </div>
+                                <div >
+                                   <button className="btn">
+                                       Enquire Now
+                                    </button>
+                                </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                
+             </div>
        </section>
        <div>
-       <Services/>
-       
-       </div>
-        
-       <div>
        <Distance/>
-       </div>
-       <Footer/>
+        </div>
+        <div>
+        </div>
 
       </>
     )

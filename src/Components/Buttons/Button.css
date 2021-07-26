@@ -9,11 +9,13 @@
     cursor: pointer;
     white-space:nowrap;
     
+    
 }
 .btn--primary{
     background-color:var(--primary) ;
     color:#9B59B6;
     border:5px solid var(--primary);
+    
     
 }
 .btn--outline{
@@ -23,16 +25,17 @@
     transition: all 0.5s ease-out;
 }
 .btn--medium{
-    padding:12px 20px;
+    padding:10px 20px;
     font-size:20px;
     height: 50px;
-    width: 120px;
-    border-radius: 5px;
-    box-shadow: 1px 5px 20px  #496cbe;
+    width: 150px;
+    border-radius: 50px;
+    box-shadow: 1px 5px 10px  #9ebbfd;
 }
 .btn--large{
     padding:12px 26px;
     font-size:20px;
+    
 }
 .btn--mobile{
     text-align:center;
@@ -106,4 +109,5 @@
     padding:8px 16px;
     height:100%;
     width:100%;
+    
 }

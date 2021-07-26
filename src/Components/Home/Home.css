@@ -1,42 +1,49 @@
 
 .background{
-    background: #496cbe;
-    height: 550px;
-    margin-top: -10px;
+    background-image: url(../assets/beanstalk.png);
+    height: 650px;
+    margin-top: -90px;
+
 }
-.card-heading{
-    color:#ffffff;
+.heading{
+    color:#333;
     font-weight: bold !important;
     font-size: 54px;
-    margin-top:100px;
+    margin-top:240px;
     justify-content: space-between;
     align-items: center;
     display: flex;
-    font-family: 'Poppins', sans-serif;
-    margin-left: 30px;
+    font-family: 'Poppins', sans-serif !important;
+    margin-left: 50px;
 }
 
-.card-subheading{
-    color:#ffffff;
+.shape{
+    height:20px;
+    margin-left:273px;
+    margin-top: -45px;
+}
+
+.sub-heading{
+    color:#496CBE;
     font-weight: bold !important;
     font-size: 30px;
     justify-content: space-between;
     align-items: center;
     display: flex;
-    margin-left: 30px;
+    margin-left: 50px;
+    margin-top: -30px;
 }
 
 .contact-form{
-    margin-left: 150px;
+    margin-left: 90px;
     
 }
 
 .card{
-    border-radius: 15px;
-    box-shadow: 5px 5px 5px #2e457c;
+    margin-top:150px;
+  border-radius: 15px; 
+  box-shadow: 5px 5px 20px #c1c9dd;
 }
-
-
 .social{
     margin-left: 25px;
 }
@@ -44,26 +51,94 @@
 .social-icons{
    height:40px
 }
-@media screen and (min-width:1px) and (max-width:600px){
-    .card-heading{
-        color:#fce9f4;
-        font-weight: bold !important;
-        font-size: 40px;
-        margin-top:50px;
-        justify-content: space-between;
-        align-items: center;
-        display: flex;
-    }
-    .contact-form{
-     margin-left: 4px;
-        
-    }
 
-    .background{
-        background: #496cbe;
-        height: 870px;
-        margin-top: -10px;
-    }
+.paragraph{
+    font-weight: bold;
+    color:#496CBE
+}
+
+.card-label{
+    font-weight: bold;
+}
+
+.form-control{
+    border-radius: 5px;
+
+}
+
+.btn{
+    background:#496CBE;
+    color:white;
+    border-radius: 25px 25px 25px;
+    box-shadow: 5px 5px 15px #3558aa;
+    transition: 0.3s ease-in-out;
+}
+.btn:hover{
+    background:#3558aa;
+    color:white;
+    box-shadow: 5px 5px 15px #2d447c;
+}
+
+.card-heading{
+    font-size: 20px;
+    font-weight: bold;
+    color:#496CBE;
+    margin-top:20px
+}
+
+
+.right{
+    background: #496CBE;
+    margin-top: -50px !important;
+}
+
+#right{
+  margin-left: 112px;
+}
+@media screen and (min-width:1px) and (max-width:600px){
+   
+.background{
+    background-image: url(../assets/beanstalk.png);
+    height: 780px;
+    margin-top: -10px;
+}
+.heading{
+    color:#333;
+    font-weight: bold !important;
+    font-size: 40px;
+    margin-top:60px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    font-family: 'Poppins', sans-serif !important;
+    margin-left: 5px;
+}
+
+.shape{
+    height:20px;
+    margin-left:118px;
+    margin-top: -35px;
+}
+
+.sub-heading{
+    color:#496CBE;
+    font-weight: bold !important;
+    font-size: 25px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin-left: 5px;
+    margin-top: -20px;
+}
+.card{
+    margin-top: 30px;
+    border-radius: 15px; 
+    box-shadow: 5px 5px 20px #c1c9dd;
+  }
+.contact-form{
+    margin-left: 5px;
+    
+}
     
     
     
