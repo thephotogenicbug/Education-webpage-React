@@ -1,38 +1,13 @@
-.heading{
-    font-size:'20px';
-    font-weight:bold
+.card-design-university{
+    border-radius: 10px 10px 10px 10px;
 }
 
-.card-1{
-    border-radius: 10px;
-    box-shadow: 5px 5px 25px #9bb7f8;
-    margin: 2%;
-    margin-left: 30px;  
-    transition: all 0.5s ease-in-out;
-}
-
-.card-1:hover{
-    border-radius: 10px;
-    box-shadow: 5px 5px 25px #4873d6;
-    margin: 2%;
-    margin-left: 30px;  
-    /* transition: all 2s ease-in-out; */
-}
-
-@media screen and (max-width: 960px){
-    .card-1{
-        border-radius: 10px;
-    box-shadow: 5px 5px 25px #9bb7f8;
-    margin: 2%;
-    margin-left: 40px;  
-    transition: all 0.5s ease-in-out; 
-    }
-    .card-1:hover{
-        border-radius: 10px;
-        box-shadow: 5px 5px 25px #4873d6;
-        margin: 2%;
-        margin-left: 40px;  
-        /* transition: all 2s ease-in-out; */
-    }
-    
+.card-design-services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    color:#496CBE;
+    font-weight: 700;
+    flex-direction: row;
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import './Home.css';
 import Distance from '../Distance/Distance'
 import Services from '../Services/Services'
+import Admission from '../Admission/Admission'
 import Footer from '../Footer/Footer'
 import {Helmet} from 'react-helmet'
 import Shape from '../assets/shape.png'
@@ -43,7 +44,7 @@ const Home = () =>{
                          <h2 className="sub-heading">Keep your studies on track <br/>with Distance Education</h2>
                      </div>
                      <div className="col-md-4 contact-form">
-                         <div className="card">
+                         <div className="card card-design">
                              <div className="card-body">
                             
                             <p className="paragraph">Get a callback from an Education <br/> Counsellor</p>
@@ -76,6 +77,10 @@ const Home = () =>{
        <Distance/>
         </div>
         <div>
+            <Services/>
+        </div>
+        <div>
+            <Admission/>
         </div>
 
       </>
