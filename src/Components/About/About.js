@@ -5,12 +5,13 @@ const About = () =>{
 
 
     return(
-        <div className="container mt-5">
-            <div className="row">
-               <div className="col-md-12 text-center">
-                   <h1 className="heading">About us</h1>
-               </div>
-               <div className="col-md-12">
+         <div className="container mt-4">
+             <div className="row">
+                 <div className="col-md-12">
+                     <h1>About us</h1>
+                     
+                 </div>
+                 <div className="col-md-12">
                    <p className="text-justify">
                    <b>Best Distance Education in Bangalore</b> Eduprov is an esteemed name in 
                    Career Counseling, Overseas Education & Admission Guidance institute 
@@ -37,8 +38,8 @@ const About = () =>{
                    </p>
 
                </div>
-            </div>
-        </div>
+             </div>
+         </div>
     )
 }
 export default About 

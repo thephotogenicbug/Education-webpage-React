@@ -3,7 +3,7 @@ import './Home.css';
 import Distance from '../Distance/Distance'
 import Services from '../Services/Services'
 import Admission from '../Admission/Admission'
-import Footer from '../Footer/Footer'
+import Footer from '../Footer'
 import {Helmet} from 'react-helmet'
 import Shape from '../assets/shape.png'
 const Home = () =>{

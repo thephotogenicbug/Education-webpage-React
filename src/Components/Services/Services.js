@@ -15,20 +15,20 @@ class Services extends Component{
                    <div className="col-md-4">
                        <div className="card text-center card-design-university">
                            <div className="card-body card-design-services">
-                            <label>Annamalai University</label>
+                            <h5>Annamalai University</h5>
                            </div>
                             <div className="mb-4">
-                            <Link to='/' className="btn ">Read More</Link>
+                            <Link to='/annamalaiuniversity' className="btn ">Details</Link>
                             </div>
                        </div>
                    </div>
                    <div className="col-md-4">
                    <div className="card text-center card-design-university">
                            <div className="card-body  card-design-services">
-                           <label>Jain University</label>
+                           <h5>Jain University</h5>
                            </div>
                            <div className="mb-4">
-                            <Link to='/' className="btn ">Read More</Link>
+                            <Link to='/jainuniversity' className="btn ">Details</Link>
                             </div>
                        </div>
                    </div>
@@ -37,10 +37,14 @@ class Services extends Component{
                    <div className="card text-center card-design-university">
                            <div className="card-body  card-design-services">
                               
-                           <label>Singhania University</label>
+                           <h5>Singhania University</h5>
+                           <p>
+                               
+                           </p>
+                            
                            </div>
                            <div className="mb-4">
-                            <Link to='/' className="btn ">Read More</Link>
+                            <Link to='/singhaniauniversity' className="btn ">Details</Link>
                             </div>
                        </div>
                    </div>
