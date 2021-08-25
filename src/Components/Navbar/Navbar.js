@@ -58,7 +58,7 @@ const Navbar = () => {
                             <Button buttonStyle='btn--outline'>Call US</Button>
                         </a>
                     ): (
-                        <a href="tel:919008006228" className='btn-link'  style={{textDecoration:'none'}} onClick={closeMobileMenu}>
+                        <a href="tel:918025591146" className='btn-link'  style={{textDecoration:'none'}} onClick={closeMobileMenu}>
                             <Button buttonStyle='btn--outline'
                              buttonSize='btn--mobile'>
                             Call US</Button>

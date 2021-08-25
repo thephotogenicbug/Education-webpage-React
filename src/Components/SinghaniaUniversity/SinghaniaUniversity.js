@@ -7,7 +7,7 @@ class SinghaniaUniversity extends Component{
             <div className="container mt-4">
                 <div className="row">
                     <div className="col-md-12">
-                        <h1>Singhania University</h1>
+                        <h1 className="text-center text-primary">Singhania University</h1>
                         <p className="text-justify mt-3">
                         The University has been established by the Govt. of Rajasthan, under Ordinance 6 of 2007. It is a <b>UGC recognized university as per Sec. 2f of the UGC Act 1956.</b>
                         </p>

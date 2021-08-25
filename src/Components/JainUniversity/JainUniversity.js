@@ -6,8 +6,8 @@ class JainUniversity extends Component{
             <div className="container mt-4">
                 <div className="row">
                     <div className="col-md-12">
-                         <h1>Jain University</h1>
-                         <p className="text-justify">
+                         <h1 className="text-center text-primary">Jain University</h1>
+                         <p className="text-justify mt-2">
                          Unconventional thinking, global perspective, student diversity, vibrant community ethos is what makes JAIN (Deemed-to-be University) stands above the curve pan India. Over three decades, we place academic commitment and career achievement at the heart of our vision and mission. Enriched by culturally and geographically diverse faculty and professional experts, we are able to produce agents who have inspired a wide range of audience internationally.
                          </p>
                          <p className="text-justify">

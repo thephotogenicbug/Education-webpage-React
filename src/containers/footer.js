@@ -27,9 +27,9 @@ export function FooterContainer() {
                 </Footer.Column>
                 <Footer.Column>
                 <Footer.Title>Social</Footer.Title>
-                    <Footer.Link href="#"><Icon className="fab fa-facebook-f" />Facebook</Footer.Link>
-                    <Footer.Link href="#"><Icon className="fab fa-instagram" />Instagram</Footer.Link>
-                    <Footer.Link href="#"><Icon className="fab fa-twitter" />Twitter</Footer.Link>
+                    <Footer.Link href="https://www.facebook.com/eduprovinstitute/"><Icon className="fab fa-facebook-f" />Facebook</Footer.Link>
+                    <Footer.Link href="https://www.instagram.com/eduprov_education/"><Icon className="fab fa-instagram" />Instagram</Footer.Link>
+                    <Footer.Link href="https://twitter.com/eduprov"><Icon className="fab fa-twitter" />Twitter</Footer.Link>
                 </Footer.Column>
             </Footer.Row>
             </Footer.Wrapper>

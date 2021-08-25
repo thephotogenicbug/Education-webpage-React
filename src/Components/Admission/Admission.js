@@ -7,7 +7,7 @@ const Admission = () =>{
 
 
     return(
-        <section style={{background:'#496CBE'}} className="mt-5">
+        <section style={{background:'#333'}} className="mt-5">
             <div className="container">
                 <div className="row">
                     <div className="col-md-12 mt-3 text-center">
