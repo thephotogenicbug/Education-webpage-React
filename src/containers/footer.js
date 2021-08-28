@@ -16,9 +16,9 @@ export function FooterContainer() {
                 </Footer.Column>
                 <Footer.Column>
                 <Footer.Title>University</Footer.Title>
-                    <Footer.Link href="#">Annamalai University</Footer.Link>
-                    <Footer.Link href="#">Jain University</Footer.Link>
-                    <Footer.Link href="#">Singhania University</Footer.Link>
+                    <Footer.Link href="https://www.eduprov.in/annamalaiuniversity">Annamalai University</Footer.Link>
+                    <Footer.Link href="https://www.eduprov.in/jainuniversity">Jain University</Footer.Link>
+                    <Footer.Link href="https://www.eduprov.in/singhaniauniversity">Singhania University</Footer.Link>
                  
                 </Footer.Column>
                 <Footer.Column>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState, useEffect} from 'react';
 import './Home.css';
 import Distance from '../Distance/Distance'
 import Services from '../Services/Services'
@@ -6,9 +6,47 @@ import Admission from '../Admission/Admission'
 import Footer from '../Footer'
 import {Helmet} from 'react-helmet'
 import Shape from '../assets/shape.png'
+import axios from 'axios';
 const Home = () =>{
 
+    const[data, updateData] = useState("");
+    const getData = () =>{
+        const url = 'http://localhost:5000/applicationform';
+        fetch(url)
+        .then(response => response.json())
+        .then(result => updateData(result))
+        
+    }
 
+    useEffect(()=>{
+        getData();
+    },[])
+
+
+
+    const [message, updateMessage] = useState("");
+    const [name, pickName] = useState("");
+    const [mobile, pickMobile] = useState("");
+    const [course, pickCourse] = useState("");
+    const [info, pickInfo] = useState("");
+
+    const save = () =>{
+        var url = "http://localhost:5000/applicationform/new";
+        var data = {"ename":name, "emobile":mobile, "ecourse":course,"einfo":info};
+        axios.post(url, data)
+        .then(response =>{
+            updateMessage(response.data);
+            getData("");
+            pickName("");
+            pickMobile("");
+            pickCourse("");
+            pickInfo("");
+        })
+      
+
+    }
+
+   
     return(
       <>
        <Helmet>
@@ -17,7 +55,7 @@ const Home = () =>{
         <link rel="canonical" href="#" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Best Distance Education in Bangalore - Eduprov</title>
-        <meta name="description" content="Best Distance Education in Bangalore Distance education can be defined as the education of students that does not necessitate the physical presence of students at the place viz. school. It is also termed as distance learning. " />
+        <meta name="description" content="Best Distance education is a millennial for students towards a better career in the longer run. Distance education is now reaching heights as many students prefer distance education. For those students who have dropped their education for certain unspecified reasons or planning to work as well as carry forward their studies, distance education can be a very good choice. As Distance education and online education are often used synonymously online distance education post covid has become more approved by many of the students across the world. Online distance education has paved way for several advantages and benefits for completion of education. Students are able to engage in education from a distance, in the comfort of their own space and a self-relaxed pace. Eduprov`s Distance education approach is very holistic and productive for students choosing amongst a pool of variants in colleges considering the factual part of admissions, possibilities and getting in would be a challenging task keeping in mind the business casualties who are in a roar towards economic productivity. " />
         <meta name="keywords" content="" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="" />
@@ -49,20 +87,41 @@ const Home = () =>{
                             
                             <p className="paragraph">Get a callback from an Education <br/> Counsellor</p>
                             <label className="card-label">Ask an experienced education counsellor to shortlist a program</label>
+                               <p className="text-primary">{message}</p>
                                 <div className="form-group">
-                                    <input type="text" className="form-control" placeholder="Name" />
+                                    <input type="text" 
+                                    className="form-control" 
+                                    placeholder="Name" 
+                                    value={name}
+                                    onChange={obj=>pickName(obj.target.value)}
+                                    />
                                 </div>
                                 <div className="form-group">
-                                    <input type="text" className="form-control" placeholder="Mobile No" />
+                                    <input type="text" 
+                                    className="form-control" 
+                                    placeholder="Mobile No" 
+                                    value={mobile}
+                                    onChange={obj=>pickMobile(obj.target.value)}
+                                    />
                                 </div>
                                 <div className="form-group">
-                                    <input type="text" className="form-control" placeholder="Course" />
+                                    <input type="text" 
+                                    className="form-control" 
+                                    placeholder="Course" 
+                                    value={course}
+                                    onChange={obj=>pickCourse(obj.target.value)}
+                                    />
                                 </div>
                                 <div className="form-group">
-                                   <textarea className="form-control" placeholder="Message"></textarea>
+                                   <textarea className="form-control" 
+                                   placeholder="Message"
+                                   value={info}
+                                   onChange={obj=>pickInfo(obj.target.value)}
+                                   >
+                                   </textarea>
                                 </div>
                                 <div >
-                                   <button className="btn">
+                                   <button className="btn" onClick={save}>
                                        Enquire Now
                                     </button>
                                 </div>
