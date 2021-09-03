@@ -7,7 +7,7 @@ class AnnamalaiUniversity extends Component{
             <div className="container mt-4">
                 <div className="row">
                     <div className="col-md-12">
-                         <h1 className="text-center text-primary">Annamalai University</h1>
+                         <h1 className="text-primary">Annamalai University</h1>
                          <p className="text-justify mt-4">
                          In the early 1920s, to serve the downtrodden and to promote Tamil Literature, Rajah Sir S. R. M. Annamalai Chettiar founded Sri Minakshi College, Sri Minakshi Tamil College and Sri Minakshi Sanskrit College in a rural setup at Chidambaram. In 1928, Rajah Sir S. R. M. Annamalai Chettiar agreed with the local Government to handover the above said institution for establishing a University. Thus, on 01.01.1929 Annamalai University was established as per Annamalai University Act 1928 (Tamil Nadu Act 1 of 1929).
                          </p>
@@ -60,6 +60,9 @@ class AnnamalaiUniversity extends Component{
                          </p>
 
                     </div>
+                </div>
+                <div className="row">
+                    <h2></h2>
                 </div>
             </div>
         )

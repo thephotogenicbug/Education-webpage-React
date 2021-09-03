@@ -6,7 +6,7 @@ class JainUniversity extends Component{
             <div className="container mt-4">
                 <div className="row">
                     <div className="col-md-12">
-                         <h1 className="text-center text-primary">Jain University</h1>
+                         <h1 className="text-primary">Jain University</h1>
                          <p className="text-justify mt-2">
                          Unconventional thinking, global perspective, student diversity, vibrant community ethos is what makes JAIN (Deemed-to-be University) stands above the curve pan India. Over three decades, we place academic commitment and career achievement at the heart of our vision and mission. Enriched by culturally and geographically diverse faculty and professional experts, we are able to produce agents who have inspired a wide range of audience internationally.
                          </p>
@@ -31,6 +31,53 @@ class JainUniversity extends Component{
 
                     </div>
                 </div>
+                 <div className="row">
+                      <div className="col-md-12 text-center text-primary">
+                      <h2>UG Programs</h2>
+                      </div>
+                       <div className="col-md-12">
+                           <table className="table table-sm table-bordered text-center">
+                               <thead>
+                                   <tr>
+                                       <th>Program</th>
+                                       <th>Duration</th>
+                                       <th>Year 1 Course Fee</th>
+                                       <th>Year 2 Course Fee</th>
+                                       <th>Year 3 Course Fee</th>
+                                       <th>Theory Fee</th>
+                                       <th>Pracitial Fee</th>
+                                       <th>Registration Fee</th>
+                                       <th>Certificate Fee</th>
+                                       <th>Total Fee</th>
+                                   </tr>
+                               </thead>
+                           </table>
+                       </div>
+                 </div>
+                 <div className="row">
+                     <div className="col-md-12 text-center text-primary">
+                         <h3>PG Programs</h3>
+                     </div>
+                     <div className="col-md-12">
+                         <table className="table table-sm table-bordered text-center">
+                             <thead>
+                                 <tr>
+                                       <th>Program</th>
+                                       <th>Duration</th>
+                                       <th>Year 1 / Sem 1</th>
+                                       <th>Year 2 / Sem 2</th>
+                                       <th>Year 3 / Sem 3</th>
+                                       <th>Sem 4</th>
+                                       <th>Theory Fee</th>
+                                       <th>Pracitial Fee</th>
+                                       <th>Registration Fee</th>
+                                       <th>Certificate Fee</th>
+                                       <th>Total Fee</th>
+                                 </tr>
+                             </thead>
+                         </table>
+                     </div>
+                 </div>
             </div>
         )
     }

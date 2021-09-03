@@ -2,10 +2,11 @@ import React from 'react'
 import Footer from '../Components/Footer'
 import { Icon } from '../Components/icons/styles/icons'
 import {Link} from 'react-router-dom'
+import './footer.css'
 
 export function FooterContainer() {
     return (
-        <Footer >
+        <Footer>
             <Footer.Wrapper>
             <Footer.Row>
                 <Footer.Column>
@@ -23,7 +24,7 @@ export function FooterContainer() {
                 </Footer.Column>
                 <Footer.Column>
                 <Footer.Title>Contact Us</Footer.Title>
-                    <Footer.Link href="#">Support</Footer.Link>
+                    <Footer.Link href="/applicationform">Application Form</Footer.Link>
                 </Footer.Column>
                 <Footer.Column>
                 <Footer.Title>Social</Footer.Title>

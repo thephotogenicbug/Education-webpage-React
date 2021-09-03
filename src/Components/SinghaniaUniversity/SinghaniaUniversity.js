@@ -7,7 +7,7 @@ class SinghaniaUniversity extends Component{
             <div className="container mt-4">
                 <div className="row">
                     <div className="col-md-12">
-                        <h1 className="text-center text-primary">Singhania University</h1>
+                        <h1 className=" text-primary">Singhania University</h1>
                         <p className="text-justify mt-3">
                         The University has been established by the Govt. of Rajasthan, under Ordinance 6 of 2007. It is a <b>UGC recognized university as per Sec. 2f of the UGC Act 1956.</b>
                         </p>
@@ -32,6 +32,18 @@ class SinghaniaUniversity extends Component{
                        <p className="text-justify">
                        Special emphasis is laid on communication skills and personality development. The uniqueness of our curriculum and various programmes, lies in promoting a strong passion in the students - for all round excellence with perfection; for meeting the challenges head on with due emphasis on ethical and moral values through broad -based management skills. The University produces knowledgeable young citizens capable of creating a better and prosperous India through inter-cultural understanding and respect.
                        </p>
+                    </div>
+                </div>
+                <div className="row mt-3">
+                    <div className="col-md-12 text-center text-primary">
+                        <h2>Singhania University Structure</h2>
+                    </div>
+                    <div className="col-md-12">
+                        <table className="table table-sm table-bordered text-center">
+                            <thead>
+                                
+                            </thead>
+                        </table>
                     </div>
                 </div>
             </div>

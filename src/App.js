@@ -6,6 +6,7 @@ import About from './Components/About/About'
 import AnnamalaiUniversity from './Components/AnnamaliUniverity/AnnamaliUniverity';
 import SinghaniaUniversity from './Components/SinghaniaUniversity/SinghaniaUniversity';
 import JainUniversity from './Components/JainUniversity/JainUniversity';
+import ApplicationForm from './Components/ApplicationForm/ApplicationForm';
 import { FooterContainer } from './containers/footer'
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
     <Route exact path='/annamalaiuniversity' component={AnnamalaiUniversity}/> 
     <Route exact path='/singhaniauniversity' component={SinghaniaUniversity}/>
     <Route exact path='/jainuniversity' component={JainUniversity}/>
+    <Route exact path="/applicationform" component={ApplicationForm}/>
     <FooterContainer/>
     </Router>
   );
