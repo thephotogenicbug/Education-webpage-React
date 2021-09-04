@@ -35,7 +35,7 @@ const About = () =>{
                    </ul>
                    <label className="label-title">List of Universities</label>
                    <ul>
-                       <li>JAIN UNIVERSITY FOR DISTANCE AND ONLINE EDUCATION </li>
+                       <li>JAIN UNIVERSITY </li>
                    </ul>
                    <p className="text-justify">
                    A globally recognized university located in the educational hub of Bangalore is considered to be the best choice offered in distance education and virtual learning. Jain University offers the students courses like MBA program in distance and regular both with the most opted specializations which are the best picks for better career opportunities. 
@@ -65,12 +65,12 @@ const About = () =>{
                      </p>
                      <label className="label-title">You can now avail online distance education courses in a plethora of variants. </label>
                      <ul>
-                         <li>B.com</li>
-                         <li>M.Com</li>
-                         <li>BBA</li>
-                         <li>MBA</li>
-                         <li>BCA</li>
-                         <li>MCA</li>
+                         <li><a href="https://eduprov.com/bachelor-of-commerce.html">B.com</a></li>
+                         <li><a href="https://eduprov.com/mcom-course.html">M.Com</a></li>
+                         <li><a href="https://eduprov.com/bachelor-of-business-administration.html">BBA</a></li>
+                         <li><a href="https://eduprov.com/mba-course-blogs.html">MBA</a></li>
+                         <li><a href="https://eduprov.com/bachelor-of-computer-application.html">BCA</a></li>
+                         <li><a href="https://eduprov.com/mca-course.html">MCA</a></li>
                      </ul>
                      <p className="text-justify">
                      Students can now study at their own place according to their convenience while having access to an extensive range of online learning materials like e-books, pdf`s, pre -recorded lectures, e- library and much more. Whether the student is a fresh graduate, an intern hoping to start a fresh career in a different subject area, want to diversify and explore their skills, or specialize in a particular field in an explicit area of interest, we have got it all covered for the students at Eduprov. We offer a wide arena of different programs like Bachelor`s, Masters and Diploma courses. 

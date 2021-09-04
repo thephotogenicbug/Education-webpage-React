@@ -39,9 +39,20 @@ class SinghaniaUniversity extends Component{
                         <h2>Singhania University Structure</h2>
                     </div>
                     <div className="col-md-12">
-                        <table className="table table-sm table-bordered text-center">
+                        <table className="table table-sm table-bordered text-center bg-primary text-white">
                             <thead>
-                                
+                                    <tr>
+                                        <th>Course Name</th>
+                                        <th>Specialization</th>
+                                        <th>Eligibility</th>
+                                        <th>Course Mode</th>
+                                        <th>Duration</th>
+                                        <th>Exams</th>
+                                        <th>Course Fee</th>
+                                        <th>Application</th>
+                                        <th>Exam Fee</th>
+                                        <th>Per Sem / Year</th>
+                                    </tr>
                             </thead>
                         </table>
                     </div>

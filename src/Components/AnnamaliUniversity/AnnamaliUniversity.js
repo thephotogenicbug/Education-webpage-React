@@ -62,7 +62,24 @@ class AnnamalaiUniversity extends Component{
                     </div>
                 </div>
                 <div className="row">
-                    <h2></h2>
+                   <div className="col-md-12 text-center text-primary">
+                       <h2>Annamalai University Structure</h2>
+                   </div>
+                    <div className="col-md-12">
+                        <table className="table table-sm table-bordered text-center  bg-primary text-white">
+                            <thead>
+                                <tr>
+                                    <th>Course Name</th>
+                                    <th>University Fees</th>
+                                    <th>Admission Fees</th>
+                                    <th>Exam Fees</th>
+                                    <th>Center Fees</th>
+                                    <th>Total Fees</th>
+                                </tr>
+                            </thead>
+                           
+                        </table>
+                    </div>
                 </div>
             </div>
         )

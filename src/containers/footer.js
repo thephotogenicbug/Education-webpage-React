@@ -12,8 +12,9 @@ export function FooterContainer() {
                 <Footer.Column>
                 <Footer.Title>Head Office</Footer.Title>
                      <p className="text-white">
-                      No 20 2nd Floor Lady Curzon Rd Santha Complex Shivaji Nagar Bengaluru Karnataka 560001
+                     <i class="fas fa-map-marker-alt"></i> No 20 2nd Floor Lady Curzon Rd Santha Complex Shivaji Nagar Bengaluru Karnataka 560001
                      </p>
+                     <p className="text-white"><i class="fas fa-phone-alt"></i> +91 80 25591146</p>
                 </Footer.Column>
                 <Footer.Column>
                 <Footer.Title>University</Footer.Title>
@@ -23,7 +24,7 @@ export function FooterContainer() {
                  
                 </Footer.Column>
                 <Footer.Column>
-                <Footer.Title>Contact Us</Footer.Title>
+                <Footer.Title>Form</Footer.Title>
                     <Footer.Link href="/applicationform">Application Form</Footer.Link>
                 </Footer.Column>
                 <Footer.Column>

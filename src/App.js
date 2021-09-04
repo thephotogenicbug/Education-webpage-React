@@ -3,7 +3,7 @@ import {BrowserRouter as Router, Route, Link, NavLink, Switch} from 'react-route
 import Navbar from './Components/Navbar/Navbar';
 import Home from './Components/Home/Home';
 import About from './Components/About/About'
-import AnnamalaiUniversity from './Components/AnnamaliUniverity/AnnamaliUniverity';
+import AnnamalaiUniversity from './Components/AnnamaliUniversity/AnnamaliUniversity';
 import SinghaniaUniversity from './Components/SinghaniaUniversity/SinghaniaUniversity';
 import JainUniversity from './Components/JainUniversity/JainUniversity';
 import ApplicationForm from './Components/ApplicationForm/ApplicationForm';

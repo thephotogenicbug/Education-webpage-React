@@ -33,50 +33,30 @@ class JainUniversity extends Component{
                 </div>
                  <div className="row">
                       <div className="col-md-12 text-center text-primary">
-                      <h2>UG Programs</h2>
+                      <h2>Jain University Structure</h2>
                       </div>
                        <div className="col-md-12">
-                           <table className="table table-sm table-bordered text-center">
+                           <table className="table table-sm table-bordered text-center  bg-primary text-white">
                                <thead>
                                    <tr>
                                        <th>Program</th>
                                        <th>Duration</th>
-                                       <th>Year 1 Course Fee</th>
-                                       <th>Year 2 Course Fee</th>
-                                       <th>Year 3 Course Fee</th>
+                                       <th>1st year Fee</th>
+                                       <th>2nd year fee</th>
+                                       <th>4th year fee</th>
                                        <th>Theory Fee</th>
                                        <th>Pracitial Fee</th>
                                        <th>Registration Fee</th>
                                        <th>Certificate Fee</th>
+                                       <th>1st Semester</th>
+                                       <th>2nd Semester</th>
+                                       <th>3rd Semester</th>
+                                       <th>4th Semester</th>
                                        <th>Total Fee</th>
                                    </tr>
                                </thead>
                            </table>
                        </div>
-                 </div>
-                 <div className="row">
-                     <div className="col-md-12 text-center text-primary">
-                         <h3>PG Programs</h3>
-                     </div>
-                     <div className="col-md-12">
-                         <table className="table table-sm table-bordered text-center">
-                             <thead>
-                                 <tr>
-                                       <th>Program</th>
-                                       <th>Duration</th>
-                                       <th>Year 1 / Sem 1</th>
-                                       <th>Year 2 / Sem 2</th>
-                                       <th>Year 3 / Sem 3</th>
-                                       <th>Sem 4</th>
-                                       <th>Theory Fee</th>
-                                       <th>Pracitial Fee</th>
-                                       <th>Registration Fee</th>
-                                       <th>Certificate Fee</th>
-                                       <th>Total Fee</th>
-                                 </tr>
-                             </thead>
-                         </table>
-                     </div>
                  </div>
             </div>
         )
