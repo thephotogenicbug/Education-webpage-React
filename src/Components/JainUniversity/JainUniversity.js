@@ -43,7 +43,7 @@ class JainUniversity extends Component{
                                        <th>Duration</th>
                                        <th>1st year Fee</th>
                                        <th>2nd year fee</th>
-                                       <th>4th year fee</th>
+                                       <th>3rd year fee</th>
                                        <th>Theory Fee</th>
                                        <th>Pracitial Fee</th>
                                        <th>Registration Fee</th>

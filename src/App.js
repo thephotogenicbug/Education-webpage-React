@@ -8,6 +8,9 @@ import SinghaniaUniversity from './Components/SinghaniaUniversity/SinghaniaUnive
 import JainUniversity from './Components/JainUniversity/JainUniversity';
 import ApplicationForm from './Components/ApplicationForm/ApplicationForm';
 import { FooterContainer } from './containers/footer'
+import PostJain from './Components/Post/PostJain';
+import PostSinghania from './Components/Post/PostSinghania';
+import PostAnnamalai from './Components/Post/PostAnnamalai';
 function App() {
   return (
     <Router>
@@ -18,6 +21,9 @@ function App() {
     <Route exact path='/singhaniauniversity' component={SinghaniaUniversity}/>
     <Route exact path='/jainuniversity' component={JainUniversity}/>
     <Route exact path="/applicationform" component={ApplicationForm}/>
+    <Route exact path='/postjain' component={PostJain} />
+    <Route exact path='/postsinghania' component={PostSinghania}/>
+    <Route exact path='/postannamalai' component={PostAnnamalai}/>
     <FooterContainer/>
     </Router>
   );
