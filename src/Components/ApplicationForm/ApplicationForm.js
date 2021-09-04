@@ -1,7 +1,10 @@
 import React,{useState} from 'react';
 import axios from 'axios';
+import { useForm } from "react-hook-form";
 
 const ApplicationForm = () =>{
+
+    const { register, handleSubmit } = useForm();
 
     const[message,updateMessage] = useState("");
 
@@ -20,7 +23,7 @@ const ApplicationForm = () =>{
     const[address,pickAddress] = useState("");
 
     const save = () =>{
-        var url ="http://localhost:5000/applicationform/newform";
+        var url ="https://curd-api-naveen.herokuapp.com/applicationform/newform";
         var data ={"name":name, "email":email, "mobile":mobile, "fname":fname, "mname":mname, "dob":dob, "exam":exam, "university":university, "college":college, "passing":passing, "percentage":percentage, "gender":gender, "address":address}
         axios.post(url, data)
         .then(response =>{
@@ -57,6 +60,7 @@ const ApplicationForm = () =>{
                                    <input type="text" 
                                    className="form-control"
                                    value={name}
+                                   {...register("name", { required: true })}
                                    onChange={obj=>pickName(obj.target.value)}
                                    />
                                </div>
@@ -67,6 +71,7 @@ const ApplicationForm = () =>{
                                    <input type="text" 
                                    className="form-control"
                                    value={email}
+                                   {...register("email", { required: true })}
                                    onChange={obj=>pickEmail(obj.target.value)}
                                    />
                                </div>
@@ -77,6 +82,7 @@ const ApplicationForm = () =>{
                                    <input type="text" 
                                    className="form-control"
                                    value={mobile}
+                                   {...register("mobile", { required: true })}
                                    onChange={obj=>pickMobile(obj.target.value)}
                                    />
                                </div>
@@ -89,6 +95,7 @@ const ApplicationForm = () =>{
                                    <input type="text" 
                                    className="form-control"
                                    value={fname}
+                                   {...register("father name", { required: true })}
                                    onChange={obj=>pickFName(obj.target.value)}
                                    />
                                </div>
@@ -99,6 +106,7 @@ const ApplicationForm = () =>{
                                    <input type="text" 
                                    className="form-control"
                                    value={mname}
+                                   {...register("mother name", { required: true })}
                                    onChange={obj=>pickMName(obj.target.value)}
                                    />
                                </div>
@@ -109,6 +117,7 @@ const ApplicationForm = () =>{
                                    <input type="date" 
                                    className="form-control"
                                    value={dob}
+                                   {...register("dob", { required: true })}
                                    onChange={obj=>pickDob(obj.target.value)}
                                    />
                                </div>
@@ -121,6 +130,7 @@ const ApplicationForm = () =>{
                                     <input type="text" 
                                     className="form-control"
                                     value={exam}
+                                    {...register("exam", { required: true })}
                                     onChange={obj=>pickExam(obj.target.value)}
                                     />
                                    </div>
@@ -131,6 +141,7 @@ const ApplicationForm = () =>{
                                     <input type="text" 
                                     className="form-control"
                                     value={university}
+                                    {...register("university", { required: true })}
                                     onChange={obj=>pickUniversity(obj.target.value)}
                                     />
                                    </div>
@@ -141,6 +152,7 @@ const ApplicationForm = () =>{
                                     <input type="text" 
                                     className="form-control"
                                     value={college}
+                                    {...register("college", { required: true })}
                                     onChange={obj=>pickCollege(obj.target.value)}
                                     />
                                     </div>
@@ -153,6 +165,7 @@ const ApplicationForm = () =>{
                                     <input type="text" 
                                     className="form-control"
                                     value={passing}
+                                    {...register("passing", { required: true })}
                                     onChange={obj=>pickPassing(obj.target.value)}
                                     />
                                     </div>
@@ -163,6 +176,7 @@ const ApplicationForm = () =>{
                                     <input type="text" 
                                     className="form-control"
                                     value={percentage}
+                                    {...register("percentage", { required: true })}
                                     onChange={obj=>pickPercentage(obj.target.value)}
                                     />
                                     </div>
@@ -170,7 +184,7 @@ const ApplicationForm = () =>{
                                 <div className="col-md-4">
                                     <div className="form-group mb-4">
                                     <label>Gender</label>
-                                     <select className="form-control" value={gender} onChange={obj=>pickGender(obj.target.value)}>
+                                     <select className="form-control"  {...register("gender", { required: true })} value={gender} onChange={obj=>pickGender(obj.target.value)}>
                                          <option>Choose..</option>
                                          <option>Male</option>
                                          <option>Female</option>
@@ -186,6 +200,7 @@ const ApplicationForm = () =>{
                                    className="form-control" 
                                    rows="4"
                                    value={address}
+                                   {...register("address", { required: true })}
                                    onChange={obj=>pickAddress(obj.target.value)}
                                    >
 
@@ -195,7 +210,7 @@ const ApplicationForm = () =>{
                            </div>
                            <div className="row">
                                <div className="form-group">
-                                   <button className="btn btn-primary" onClick={save}>
+                                   <button className="btn btn-primary" onClick={handleSubmit(save)}>
                                        Submit
                                     </button>
                                </div>

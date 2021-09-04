@@ -7,11 +7,13 @@ import Footer from '../Footer'
 import {Helmet} from 'react-helmet'
 import Shape from '../assets/shape.png'
 import axios from 'axios';
+import { useForm } from "react-hook-form";
 const Home = () =>{
+    const { register, handleSubmit } = useForm();
 
     const[data, updateData] = useState("");
     const getData = () =>{
-        const url = 'http://localhost:5000/applicationform';
+        const url = 'https://curd-api-naveen.herokuapp.com/applicationform';
         fetch(url)
         .then(response => response.json())
         .then(result => updateData(result))
@@ -31,7 +33,7 @@ const Home = () =>{
     const [info, pickInfo] = useState("");
 
     const save = () =>{
-        var url = "http://localhost:5000/applicationform/new";
+        var url = "https://curd-api-naveen.herokuapp.com/applicationform/new";
         var data = {"ename":name, "emobile":mobile, "ecourse":course,"einfo":info};
         axios.post(url, data)
         .then(response =>{
@@ -93,6 +95,7 @@ const Home = () =>{
                                     className="form-control" 
                                     placeholder="Name" 
                                     value={name}
+                                    {...register("name", { required: true })}
                                     onChange={obj=>pickName(obj.target.value)}
                                     />
                                 </div>
@@ -101,6 +104,7 @@ const Home = () =>{
                                     className="form-control" 
                                     placeholder="Mobile No" 
                                     value={mobile}
+                                    {...register("mobile", { required: true })}
                                     onChange={obj=>pickMobile(obj.target.value)}
                                     />
                                 </div>
@@ -109,6 +113,7 @@ const Home = () =>{
                                     className="form-control" 
                                     placeholder="Course" 
                                     value={course}
+                                    {...register("course", { required: true })}
                                     onChange={obj=>pickCourse(obj.target.value)}
                                     />
                                 </div>
@@ -116,12 +121,13 @@ const Home = () =>{
                                    <textarea className="form-control" 
                                    placeholder="Message"
                                    value={info}
+                                   {...register("info", { required: true })}
                                    onChange={obj=>pickInfo(obj.target.value)}
                                    >
                                    </textarea>
                                 </div>
                                 <div >
-                                   <button className="btn" onClick={save}>
+                                   <button className="btn" onClick={handleSubmit(save)}>
                                        Enquire Now
                                     </button>
                                 </div>
