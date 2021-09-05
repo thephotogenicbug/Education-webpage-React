@@ -2,6 +2,8 @@ import React,{useState} from 'react';
 
 const PostJain = () =>{
 
+    const[message, updateMessage] = useState("")
+    const[program, pickProgram] = useState
     return(
         <div className="container mt-5">
             <div className="row">
