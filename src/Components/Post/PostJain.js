@@ -20,7 +20,7 @@ const PostJain = () =>{
 
 
     const save = () =>{
-        var url = "http://localhost:5000/applicationform/postjainuniversity";
+        var url = "https://distance-api-url.herokuapp.com/applicationform/postjainuniversity";
         var data = {"program":program, "duration":duration, "yearone":yearone, "yeartwo":yeartwo, "yearthree":yearthree, "theoryfee":theoryfee, "practicalfee":practicalfee, "registrationfee":registrationfee, "certificatefee":certificatefee, "semone":semone, "semtwo":semtwo, "semthree":semthree, "semfour":semfour, "totalfee":totalfee};
         axios.post(url,data)
         .then(response =>{

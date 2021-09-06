@@ -13,7 +13,7 @@ const Home = () =>{
 
     const[data, updateData] = useState("");
     const getData = () =>{
-        const url = 'https://curd-api-naveen.herokuapp.com/applicationform';
+        const url = 'https://distance-api-url.herokuapp.com/applicationform';
         fetch(url)
         .then(response => response.json())
         .then(result => updateData(result))
@@ -33,7 +33,7 @@ const Home = () =>{
     const [info, pickInfo] = useState("");
 
     const save = () =>{
-        var url = "https://curd-api-naveen.herokuapp.com/applicationform/new";
+        var url = "https://distance-api-url.herokuapp.com/applicationform/new";
         var data = {"ename":name, "emobile":mobile, "ecourse":course,"einfo":info};
         axios.post(url, data)
         .then(response =>{

@@ -5,7 +5,7 @@ const JainUniversity = () => {
 
     const[dataitem,updateData] = useState([]);
     const getData = () =>{
-        const url ="http://localhost:5000/applicationform/getjainuniversity";
+        const url ="https://distance-api-url.herokuapp.com/applicationform/getjainuniversity";
         fetch(url)
         .then(response => response.json())
         .then(result => updateData(result))

@@ -23,7 +23,7 @@ const ApplicationForm = () =>{
     const[address,pickAddress] = useState("");
 
     const save = () =>{
-        var url ="https://curd-api-naveen.herokuapp.com/applicationform/newform";
+        var url ="https://distance-api-url.herokuapp.com/applicationform/newform";
         var data ={"name":name, "email":email, "mobile":mobile, "fname":fname, "mname":mname, "dob":dob, "exam":exam, "university":university, "college":college, "passing":passing, "percentage":percentage, "gender":gender, "address":address}
         axios.post(url, data)
         .then(response =>{

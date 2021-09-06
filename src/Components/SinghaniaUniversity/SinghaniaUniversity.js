@@ -4,7 +4,7 @@ const SinghaniaUniversity = () =>{
 
     const[dataitem, updateData] = useState([]);
     const getData = () =>{
-        const url = "http://localhost:5000/applicationform/getsinghaniauniversity";
+        const url = "https://distance-api-url.herokuapp.com/applicationform/getsinghaniauniversity";
         fetch(url)
         .then(response => response.json())
         .then(result => updateData(result))

@@ -12,7 +12,7 @@ const PostAnnamalai = () =>{
     const[totalfee, pickTotalfee] = useState("");
 
     const save = () =>{
-        var url="http://localhost:5000/applicationform/postannamalaiuniversity";
+        var url="https://distance-api-url.herokuapp.com/applicationform/postannamalaiuniversity";
         var data={"course":course, "unifee":unifee, "admissionfee":admissionfee, "examfee":examfee, "centerfee":centerfee, "totalfee":totalfee};
         axios.post(url, data)
         .then(response =>{

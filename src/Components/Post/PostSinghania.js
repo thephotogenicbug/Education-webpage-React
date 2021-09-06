@@ -16,7 +16,7 @@ const PostSinghania = () =>{
 
 
     const save = () =>{
-      var url = "http://localhost:5000/applicationform/postsinghania"
+      var url = "https://distance-api-url.herokuapp.com/applicationform/postsinghania"
       var data ={"course":course, "spec":spec, "eligibility":eligibility, "coursemode":coursemode, "duration":duration, "exams":exams, "coursefee":coursefee, "application":application, "examfee":examfee, "persem":persem};
       axios.post(url, data)
       .then(response =>{
