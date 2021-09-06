@@ -22,23 +22,27 @@ const AnnamalaiUniversity = () =>{
     return(
         <>
         <Helmet>
-            
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <link rel="canonical" href="https://www.eduprov.in/annamalaiuniversity" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Annamalai University Admission in Bangalore - Eduprov</title>
+        <meta name="description" content=" Annamalai University, accredited with ‘A’ Grade by NAAC in 2014, is one of India’s largest public residential universities with 10 Faculties and 49 departments of study. Sprawling over 950 Acres of land, the University does yeoman service in taking education to the doorsteps of the people who are otherwise far from access to centres of higher learning. The University has initiated several innovative teaching programmes over the years and has been a pioneer in distance education." />
+        <meta name="keywords" content="" />
+        <meta name="author" content="thephotogenicbug"/>
         </Helmet>
         <div className="container mt-4">
             <div className="row">
                 <div className="col-md-12">
                      <h1 className="text-primary">Annamalai University</h1>
-                     <p className="text-justify mt-4">
-                     In the early 1920s, to serve the downtrodden and to promote Tamil Literature, Rajah Sir S. R. M. Annamalai Chettiar founded Sri Minakshi College, Sri Minakshi Tamil College and Sri Minakshi Sanskrit College in a rural setup at Chidambaram. In 1928, Rajah Sir S. R. M. Annamalai Chettiar agreed with the local Government to handover the above said institution for establishing a University. Thus, on 01.01.1929 Annamalai University was established as per Annamalai University Act 1928 (Tamil Nadu Act 1 of 1929).
+                     <p className="text-justify">
+                      <b>Annamalai University</b>, accredited with ‘A’ Grade by NAAC in 2014, is one of India’s largest public residential universities with 10 Faculties and 49 departments of study. Sprawling over 950 Acres of land, the University does yeoman service in taking education to the doorsteps of the people who are otherwise far from access to centres of higher learning. The University has initiated several innovative teaching programmes over the years and has been a pioneer in distance education.
                      </p>
                      <label className="label-title">Annamalai University Act 2013</label>
                      <p className="text-justify">
                      The most significant development is the enactment of the Annamalai University Act, 2013 (Tamil Nadu Act 20 of 2013), which has come into force from September 25, 2013, after obtaining the assent of His Excellency, the President of India.
                      </p>
                      <label className="label-title">Accolades</label>
-                     <p className="text-justify">
-                      <b>Annamalai University</b>, accredited with ‘A’ Grade by NAAC in 2014, is one of India’s largest public residential universities with 10 Faculties and 49 departments of study. Sprawling over 950 Acres of land, the University does yeoman service in taking education to the doorsteps of the people who are otherwise far from access to centres of higher learning. The University has initiated several innovative teaching programmes over the years and has been a pioneer in distance education.
-                     </p>
                      <p className="text-justify">
                       <b>“The NIRF-2020”</b> by the Ministry of Human Resource Development (MHRD) has ranked the University in the band 101 - 150 in the University Category. In the Pharmacy Category the ranking is 12th in India. In the Medical Category the ranking is 35th.
                      </p>

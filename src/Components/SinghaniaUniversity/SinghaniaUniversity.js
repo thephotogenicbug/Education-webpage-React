@@ -1,9 +1,33 @@
-import React,{Component} from 'react';
-class SinghaniaUniversity extends Component{
+import React,{useState, useEffect} from 'react';
+import { Helmet } from 'react-helmet';
+const SinghaniaUniversity = () =>{
+
+    const[dataitem, updateData] = useState([]);
+    const getData = () =>{
+        const url = "http://localhost:5000/applicationform/getsinghaniauniversity";
+        fetch(url)
+        .then(response => response.json())
+        .then(result => updateData(result))
+    }
+
+    useEffect(()=>{
+       getData();
+    },[])
 
 
-    render(){
+  
         return(
+            <>
+             <Helmet>
+                <meta charset="UTF-8"/>
+                <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+                <link rel="canonical" href="https://www.eduprov.in/singhaniauniversity" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+                <title>Singhania University Admission in Bangalore - Eduprov</title>
+                <meta name="description" content="Singhania University came in existence by the inspirations of Smt. Narmada Devi Singhanaia, mother of the founder Shri. D.C. Singhania." />
+                <meta name="keywords" content="" />
+                <meta name="author" content="thephotogenicbug"/>
+            </Helmet>
             <div className="container mt-4">
                 <div className="row">
                     <div className="col-md-12">
@@ -39,7 +63,7 @@ class SinghaniaUniversity extends Component{
                         <h2>Singhania University Structure</h2>
                     </div>
                     <div className="col-md-12">
-                        <table className="table table-sm table-bordered text-center bg-primary text-white">
+                        <table className="table table-sm table-bordered text-center ">
                             <thead>
                                     <tr>
                                         <th>Course Name</th>
@@ -54,12 +78,33 @@ class SinghaniaUniversity extends Component{
                                         <th>Per Sem / Year</th>
                                     </tr>
                             </thead>
+                            <tbody>
+                            {
+                             dataitem.map((xdata, index)=>{
+                                 return(
+                                     <tr key={index}>
+                                       <td>{xdata.course}</td>
+                                       <td>{xdata.spec}</td>
+                                       <td>{xdata.eligibility}</td>
+                                       <td>{xdata.coursemode}</td>
+                                       <td>{xdata.duration}</td>
+                                       <td>{xdata.exams}</td>
+                                       <td>{xdata.coursefee}</td>
+                                       <td>{xdata.application}</td>
+                                       <td>{xdata.examfee}</td>
+                                       <td>{xdata.persem}</td>
+                                     </tr>
+                                 )
+                             })
+                         }
+                            </tbody>
                         </table>
                     </div>
                 </div>
             </div>
+            </>
         )
-    }
+    
 
 }
 export default SinghaniaUniversity;

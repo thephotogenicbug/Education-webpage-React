@@ -1,9 +1,46 @@
 import React,{useState} from 'react';
-
+import axios from 'axios';
 const PostJain = () =>{
 
-    const[message, updateMessage] = useState("")
-    const[program, pickProgram] = useState
+    const[message, updateMessage] = useState("");
+    const[program, pickProgram] = useState("");
+    const[duration, pickDuration] = useState("");
+    const[yearone, pickYearOne] = useState("");
+    const[yeartwo, pickYearTwo] = useState("");
+    const[yearthree, pickYearThree] = useState("");
+    const[theoryfee, pickTheoryFee] = useState("");
+    const[practicalfee, pickPracticalFee] = useState("");
+    const[registrationfee, pickRegistration] = useState("");
+    const[certificatefee, pickCertificate] = useState("");
+    const[semone, pickSemOne] = useState("");
+    const[semtwo, pickSemTwo] = useState("");
+    const[semthree, pickSemThree] = useState("");
+    const[semfour, pickSemFour] = useState("");
+    const[totalfee, pickTotalFee] = useState("");
+
+
+    const save = () =>{
+        var url = "http://localhost:5000/applicationform/postjainuniversity";
+        var data = {"program":program, "duration":duration, "yearone":yearone, "yeartwo":yeartwo, "yearthree":yearthree, "theoryfee":theoryfee, "practicalfee":practicalfee, "registrationfee":registrationfee, "certificatefee":certificatefee, "semone":semone, "semtwo":semtwo, "semthree":semthree, "semfour":semfour, "totalfee":totalfee};
+        axios.post(url,data)
+        .then(response =>{
+            updateMessage(response.data)
+            pickProgram("");
+            pickDuration("");
+            pickYearOne("");
+            pickYearTwo("");
+            pickYearThree("");
+            pickTheoryFee("");
+            pickPracticalFee("");
+            pickRegistration("");
+            pickCertificate("");
+            pickSemOne("");
+            pickSemTwo("");
+            pickSemThree("");
+            pickSemFour("");
+            pickTotalFee("");
+        })
+    }
     return(
         <div className="container mt-5">
             <div className="row">
@@ -11,23 +48,36 @@ const PostJain = () =>{
                     <div className="card">
                         <div className="card-header">Jain University</div>
                         <div className="card-body">
+                            <p className="text-center text-success">{message}</p>
                             <div className="row">
                                 <div className="col-md-4">
                                     <div className="form-group">
                                         <label>Program</label>
-                                        <input type="text" className="form-control" />
+                                        <input type="text" 
+                                        className="form-control" 
+                                        value={program}
+                                        onChange={obj=>pickProgram(obj.target.value)}
+                                        />
                                     </div>
                                 </div>
                                 <div className="col-md-4">
                                     <div className="form-group">
                                         <label>Duration</label>
-                                        <input type="text" className="form-control" />
+                                        <input type="text" 
+                                        className="form-control" 
+                                        value={duration}
+                                        onChange={obj=>pickDuration(obj.target.value)}
+                                        />
                                     </div>
                                 </div>
                                 <div className="col-md-4">
                                     <div className="form-group">
                                         <label>1st Year Fee</label>
-                                        <input type="text" className="form-control" />
+                                        <input type="text" 
+                                        className="form-control" 
+                                        value={yearone}
+                                        onChange={obj=>pickYearOne(obj.target.value)}
+                                        />
                                     </div>
                                 </div>
                             </div>
@@ -35,73 +85,125 @@ const PostJain = () =>{
                                 <div className="col-md-4">
                                     <div className="form-group">
                                         <label>2nd Year Fee</label>
-                                        <input type="text" className="form-control" />
+                                        <input type="text" 
+                                        className="form-control" 
+                                        value={yeartwo}
+                                        onChange={obj=>pickYearTwo(obj.target.value)}
+                                        />
+                                    </div>
+                                </div>
+                                <div className="col-md-4">
+                                    <div className="form-group">
+                                        <label>3rd Year Fee</label>
+                                        <input type="text" 
+                                        className="form-control" 
+                                        value={yearthree}
+                                        onChange={obj=>pickYearThree(obj.target.value)}
+                                        />
                                     </div>
                                 </div>
                                 <div className="col-md-4">
                                     <div className="form-group">
                                         <label>Theory Fee</label>
-                                        <input type="text" className="form-control" />
-                                    </div>
-                                </div>
-                                <div className="col-md-4">
-                                    <div className="form-group">
-                                        <label>Practical Fee</label>
-                                        <input type="text" className="form-control" />
+                                        <input type="text" 
+                                        className="form-control" 
+                                        value={theoryfee}
+                                        onChange={obj=>pickTheoryFee(obj.target.value)}
+                                        />
                                     </div>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-md-4">
                                     <div className="form-group">
+                                        <label>Practical Fee</label>
+                                        <input type="text" 
+                                        className="form-control" 
+                                        value={practicalfee}
+                                        onChange={obj=>pickPracticalFee(obj.target.value)}
+                                        />
+                                    </div>
+                                </div>
+                                <div className="col-md-4">
+                                    <div className="form-group">
                                         <label>Registration Fee</label>
-                                        <input type="text" className="form-control" />
+                                        <input type="text" 
+                                        className="form-control" 
+                                        value={registrationfee}
+                                        onChange={obj=>pickRegistration(obj.target.value)}
+                                        />
                                     </div>
                                 </div>
                                 <div className="col-md-4">
                                     <div className="form-group">
                                         <label>Certificate Fee</label>
-                                        <input type="text" className="form-control" />
-                                    </div>
-                                </div>
-                                <div className="col-md-4">
-                                    <div className="form-group">
-                                        <label>1st Semester</label>
-                                        <input type="text" className="form-control" />
+                                        <input type="text" 
+                                        className="form-control" 
+                                        value={certificatefee}
+                                        onChange={obj=>pickCertificate(obj.target.value)}
+                                        />
                                     </div>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-md-4">
                                     <div className="form-group">
+                                        <label>1st  Semester</label>
+                                        <input type="text" 
+                                        className="form-control" 
+                                        value={semone}
+                                        onChange={obj=>pickSemOne(obj.target.value)}
+                                        />
+                                    </div>
+                                </div>
+                                <div className="col-md-4">
+                                    <div className="form-group">
                                         <label>2nd Semester</label>
-                                        <input type="text" className="form-control" />
+                                        <input type="text" 
+                                        className="form-control" 
+                                        value={semtwo}
+                                        onChange={obj=>pickSemTwo(obj.target.value)}
+                                        />
                                     </div>
                                 </div>
                                 <div className="col-md-4">
                                     <div className="form-group">
                                         <label>3rd Semester</label>
-                                        <input type="text" className="form-control" />
-                                    </div>
-                                </div>
-                                <div className="col-md-4">
-                                    <div className="form-group">
-                                        <label>4th Semester</label>
-                                        <input type="text" className="form-control" />
+                                        <input type="text" 
+                                        className="form-control" 
+                                        value={semthree}
+                                        onChange={obj=>pickSemThree(obj.target.value)}
+                                        />
                                     </div>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-md-4">
                                     <div className="form-group">
+                                        <label>4th Semester</label>
+                                        <input type="text" 
+                                        className="form-control" 
+                                        value={semfour}
+                                        onChange={obj=>pickSemFour(obj.target.value)}
+                                        />
+                                    </div>
+                                </div>
+                                <div className="col-md-4">
+                                    <div className="form-group">
                                         <label>Total Fee</label>
-                                        <input type="text" className="form-control" />
+                                        <input type="text" 
+                                        className="form-control" 
+                                        value={totalfee}
+                                        onChange={obj=>pickTotalFee(obj.target.value)}
+                                        />
                                     </div>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="form-group">
-                                    <button className="btn">Submit</button>
+                                    <button className="btn" onClick={save}>
+                                        Submit
+                                    </button>
                                 </div>
                             </div>
                         </div>

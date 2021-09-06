@@ -50,6 +50,11 @@ const Navbar = () => {
                        About
                    </Link>
                 </li>
+                <li className="nav-item">
+                   <Link to='/applicationform' className='nav-links' onClick={closeMobileMenu}>
+                      Application Form
+                   </Link>
+                </li>
                 
                 
                 <li className="nav-btn">
