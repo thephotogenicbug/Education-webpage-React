@@ -1,6 +1,9 @@
 import React,{useState} from 'react';
 import axios from 'axios';
+import { useForm } from "react-hook-form";
 const PostSinghania = () =>{
+
+    const { register, handleSubmit } = useForm();
 
     const[message, updateMessage] = useState("");
     const[course, pickCourse] = useState("");
@@ -51,6 +54,7 @@ const PostSinghania = () =>{
                                         <input type="text" 
                                         className="form-control" 
                                         value={course}
+                                        {...register("coursename", { required: true })}
                                         onChange={obj=>pickCourse(obj.target.value)}
                                         />
                                     </div>
@@ -61,6 +65,7 @@ const PostSinghania = () =>{
                                         <input type="text" 
                                         className="form-control" 
                                         value={spec}
+                                        {...register("spec", { required: true })}
                                         onChange={obj=>pickSpec(obj.target.value)}
                                         />
                                     </div>
@@ -71,6 +76,7 @@ const PostSinghania = () =>{
                                         <input type="text" 
                                         className="form-control" 
                                         value={eligibility}
+                                        {...register("eligibility", { required: true })}
                                         onChange={obj=>pickEligibility(obj.target.value)}
                                         />
                                     </div>
@@ -83,6 +89,7 @@ const PostSinghania = () =>{
                                         <input type="text" 
                                         className="form-control" 
                                         value={coursemode}
+                                        {...register("coursemode", { required: true })}
                                         onChange={obj=>pickCourseMode(obj.target.value)}
                                         />
                                     </div>
@@ -93,6 +100,7 @@ const PostSinghania = () =>{
                                         <input type="text" 
                                         className="form-control" 
                                         value={duration}
+                                        {...register("duration", { required: true })}
                                         onChange={obj=>pickDuration(obj.target.value)}
                                         />
                                     </div>
@@ -103,6 +111,7 @@ const PostSinghania = () =>{
                                         <input type="text" 
                                         className="form-control"
                                         value={exams} 
+                                        {...register("exams", { required: true })}
                                         onChange={obj=>pickExam(obj.target.value)}
                                         />
                                     </div>
@@ -115,6 +124,7 @@ const PostSinghania = () =>{
                                         <input type="text" 
                                         className="form-control" 
                                         value={coursefee}
+                                        {...register("coursefee", { required: true })}
                                         onChange={obj=>pickCourseFee(obj.target.value)}
                                         />
                                     </div>
@@ -125,6 +135,7 @@ const PostSinghania = () =>{
                                         <input type="text" 
                                         className="form-control" 
                                         value={application}
+                                        {...register("applicationfee", { required: true })}
                                         onChange={obj=>pickApplication(obj.target.value)}
                                         />
                                     </div>
@@ -135,6 +146,7 @@ const PostSinghania = () =>{
                                         <input type="text" 
                                         className="form-control" 
                                         value={examfee}
+                                        {...register("examfee", { required: true })}
                                         onChange={obj=>pickExamFee(obj.target.value)}
                                         />
                                     </div>
@@ -147,6 +159,7 @@ const PostSinghania = () =>{
                                         <input type="text" 
                                         className="form-control" 
                                         value={persem}
+                                        {...register("persem", { required: true })}
                                         onChange={obj=>pickPerSem(obj.target.value)}
                                         />
                                     </div>
@@ -154,7 +167,7 @@ const PostSinghania = () =>{
                             </div>
                             <div className="row">
                                 <div className="form-group">
-                                    <button className="btn" onClick={save}>
+                                    <button className="btn" onClick={handleSubmit(save)}>
                                         Submit
                                     </button>
                                 </div>

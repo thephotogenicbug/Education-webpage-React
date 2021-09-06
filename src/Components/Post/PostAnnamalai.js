@@ -1,7 +1,11 @@
 import React,{useState} from 'react';
 import axios from 'axios';
+import { useForm } from "react-hook-form";
 
 const PostAnnamalai = () =>{
+
+    const { register, handleSubmit } = useForm();
+
 
     const[message, updateMessage] = useState("");
     const[course, pickCourse] = useState("");
@@ -40,6 +44,8 @@ const PostAnnamalai = () =>{
                                         <label>Course Name</label>
                                         <input type="text" 
                                         className="form-control" 
+                                        value={course}
+                                        {...register("coursename", { required: true })}
                                         onChange={obj=>pickCourse(obj.target.value)}
                                         />
                                     </div>
@@ -48,7 +54,9 @@ const PostAnnamalai = () =>{
                                     <div className="form-group">
                                         <label>University Fees</label>
                                         <input type="text" 
-                                        className="form-control" 
+                                        className="form-control"
+                                        value={unifee}
+                                        {...register("unifee", { required: true })}
                                         onChange={obj=>pickUnifee(obj.target.value)}
                                         />
                                     </div>
@@ -58,6 +66,8 @@ const PostAnnamalai = () =>{
                                         <label>Admission Fees</label>
                                         <input type="text" 
                                         className="form-control" 
+                                        value={admissionfee}
+                                        {...register("admissionfee", { required: true })}
                                         onChange={obj=>pickAdmissionfee(obj.target.value)}
                                         />
                                     </div>
@@ -69,6 +79,8 @@ const PostAnnamalai = () =>{
                                         <label>Exam Fees</label>
                                         <input type="text" 
                                         className="form-control" 
+                                        value={examfee}
+                                        {...register("examfee", { required: true })}
                                         onChange={obj=>pickExamfee(obj.target.value)}
                                         />
                                     </div>
@@ -78,6 +90,8 @@ const PostAnnamalai = () =>{
                                         <label>Center Fees</label>
                                         <input type="text" 
                                         className="form-control" 
+                                        value={centerfee}
+                                        {...register("coursefee", { required: true })}
                                         onChange={obj=>pickCenterfee(obj.target.value)}
                                         />
                                     </div>
@@ -87,6 +101,8 @@ const PostAnnamalai = () =>{
                                         <label>Total Fees</label>
                                         <input type="text" 
                                         className="form-control" 
+                                        value={totalfee}
+                                        {...register("totalfee", { required: true })}
                                         onChange={obj=>pickTotalfee(obj.target.value)}
                                         />
                                     </div>
@@ -94,7 +110,7 @@ const PostAnnamalai = () =>{
                             </div>
                             <div className="row">
                                 <div className="form-group">
-                                    <button className="btn" onClick={save}>
+                                    <button className="btn" onClick={handleSubmit(save)}>
                                         Submit
                                     </button>
                                 </div>
