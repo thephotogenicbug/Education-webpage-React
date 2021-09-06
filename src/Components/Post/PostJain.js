@@ -81,7 +81,6 @@ const PostJain = () =>{
                                         <input type="text" 
                                         className="form-control" 
                                         value={yearone}
-                                        {...register("yearone", { required: true })}
                                         onChange={obj=>pickYearOne(obj.target.value)}
                                         />
                                     </div>
@@ -94,7 +93,6 @@ const PostJain = () =>{
                                         <input type="text" 
                                         className="form-control" 
                                         value={yeartwo}
-                                        {...register("yeartwo", { required: true })}
                                         onChange={obj=>pickYearTwo(obj.target.value)}
                                         />
                                     </div>
@@ -105,7 +103,6 @@ const PostJain = () =>{
                                         <input type="text" 
                                         className="form-control" 
                                         value={yearthree}
-                                        {...register("yearthree", { required: true })}
                                         onChange={obj=>pickYearThree(obj.target.value)}
                                         />
                                     </div>
@@ -164,7 +161,6 @@ const PostJain = () =>{
                                         <input type="text" 
                                         className="form-control" 
                                         value={semone}
-                                        {...register("semone", { required: true })}
                                         onChange={obj=>pickSemOne(obj.target.value)}
                                         />
                                     </div>
@@ -175,7 +171,6 @@ const PostJain = () =>{
                                         <input type="text" 
                                         className="form-control" 
                                         value={semtwo}
-                                        {...register("semtwo", { required: true })}
                                         onChange={obj=>pickSemTwo(obj.target.value)}
                                         />
                                     </div>
@@ -186,7 +181,6 @@ const PostJain = () =>{
                                         <input type="text" 
                                         className="form-control" 
                                         value={semthree}
-                                        {...register("semthree", { required: true })}
                                         onChange={obj=>pickSemThree(obj.target.value)}
                                         />
                                     </div>
@@ -199,7 +193,6 @@ const PostJain = () =>{
                                         <input type="text" 
                                         className="form-control" 
                                         value={semfour}
-                                        {...register("semfour", { required: true })}
                                         onChange={obj=>pickSemFour(obj.target.value)}
                                         />
                                     </div>
