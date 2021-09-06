@@ -14,10 +14,11 @@ const PostAnnamalai = () =>{
     const[examfee, pickExamfee] = useState("");
     const[centerfee, pickCenterfee] = useState("");
     const[totalfee, pickTotalfee] = useState("");
+    const[regfee, pickRegfee] = useState("");
 
     const save = () =>{
         var url="https://distance-api-url.herokuapp.com/applicationform/postannamalaiuniversity";
-        var data={"course":course, "unifee":unifee, "admissionfee":admissionfee, "examfee":examfee, "centerfee":centerfee, "totalfee":totalfee};
+        var data={"course":course, "unifee":unifee, "admissionfee":admissionfee, "examfee":examfee, "centerfee":centerfee, "totalfee":totalfee, "regfee":regfee};
         axios.post(url, data)
         .then(response =>{
             updateMessage(response.data);
@@ -26,6 +27,7 @@ const PostAnnamalai = () =>{
             pickExamfee("");
             pickCenterfee("");
             pickTotalfee("");
+            pickRegfee("");
 
         })
     }
@@ -108,6 +110,19 @@ const PostAnnamalai = () =>{
                                     </div>
                                 </div>
                             </div>
+                             <div className="row">
+                                 <div className="col-md-4">
+                                 <div className="form-group">
+                                        <label>Registration Fees</label>
+                                        <input type="text" 
+                                        className="form-control" 
+                                        value={regfee}
+                                        {...register("regfee", { required: true })}
+                                        onChange={obj=>pickRegfee(obj.target.value)}
+                                        />
+                                    </div>
+                                 </div>
+                             </div>
                             <div className="row">
                                 <div className="form-group">
                                     <button className="btn" onClick={handleSubmit(save)}>

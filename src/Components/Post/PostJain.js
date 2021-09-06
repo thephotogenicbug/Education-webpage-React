@@ -20,11 +20,12 @@ const PostJain = () =>{
     const[semthree, pickSemThree] = useState("");
     const[semfour, pickSemFour] = useState("");
     const[totalfee, pickTotalFee] = useState("");
+    const[regfee, pickRegfee] = useState("");
 
 
     const save = () =>{
         var url = "https://distance-api-url.herokuapp.com/applicationform/postjainuniversity";
-        var data = {"program":program, "duration":duration, "yearone":yearone, "yeartwo":yeartwo, "yearthree":yearthree, "theoryfee":theoryfee, "practicalfee":practicalfee, "registrationfee":registrationfee, "certificatefee":certificatefee, "semone":semone, "semtwo":semtwo, "semthree":semthree, "semfour":semfour, "totalfee":totalfee};
+        var data = {"program":program, "duration":duration, "yearone":yearone, "yeartwo":yeartwo, "yearthree":yearthree, "theoryfee":theoryfee, "practicalfee":practicalfee, "registrationfee":registrationfee, "certificatefee":certificatefee, "semone":semone, "semtwo":semtwo, "semthree":semthree, "semfour":semfour, "totalfee":totalfee, "regfee":regfee};
         axios.post(url,data)
         .then(response =>{
             updateMessage(response.data)
@@ -42,6 +43,7 @@ const PostJain = () =>{
             pickSemThree("");
             pickSemFour("");
             pickTotalFee("");
+            pickRegfee("");
         })
     }
     return(
@@ -205,6 +207,17 @@ const PostJain = () =>{
                                         value={totalfee}
                                         {...register("totalfee", { required: true })}
                                         onChange={obj=>pickTotalFee(obj.target.value)}
+                                        />
+                                    </div>
+                                </div>
+                                <div className="col-md-4">
+                                    <div className="form-group">
+                                        <label>Registration Fee</label>
+                                        <input type="text" 
+                                        className="form-control" 
+                                        value={regfee}
+                                        {...register("regfee", { required: true })}
+                                        onChange={obj=>pickRegfee(obj.target.value)}
                                         />
                                     </div>
                                 </div>

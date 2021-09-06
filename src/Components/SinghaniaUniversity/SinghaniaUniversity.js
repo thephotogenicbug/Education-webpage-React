@@ -75,6 +75,7 @@ const SinghaniaUniversity = () =>{
                                         <th>Course Fee</th>
                                         <th>Application</th>
                                         <th>Exam Fee</th>
+                                        <th>Registration Fee</th>
                                         <th>Per Sem / Year</th>
                                     </tr>
                             </thead>
@@ -92,6 +93,7 @@ const SinghaniaUniversity = () =>{
                                        <td>{xdata.coursefee}</td>
                                        <td>{xdata.application}</td>
                                        <td>{xdata.examfee}</td>
+                                       <td>{xdata.regfee}</td>
                                        <td>{xdata.persem}</td>
                                      </tr>
                                  )

@@ -76,6 +76,7 @@ const JainUniversity = () => {
                                    <th>2nd Semester</th>
                                    <th>3rd Semester</th>
                                    <th>4th Semester</th>
+                                   <th>Registration Fee</th>
                                    <th>Total Fee</th>
                                </tr>
                            </thead>
@@ -98,6 +99,7 @@ const JainUniversity = () => {
                                        <td>{xdata.semtwo}</td>
                                        <td>{xdata.semthree}</td>
                                        <td>{xdata.semfour}</td>
+                                       <td>{xdata.regfee}</td>
                                        <td>{xdata.totalfee}</td>
                                      </tr>
                                  )

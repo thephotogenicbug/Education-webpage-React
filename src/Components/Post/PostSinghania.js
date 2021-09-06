@@ -16,11 +16,12 @@ const PostSinghania = () =>{
     const[application, pickApplication] = useState("");
     const[examfee, pickExamFee] = useState("");
     const[persem, pickPerSem] = useState("");
+    const[regfee, pickRegfee] = useState("");
 
 
     const save = () =>{
       var url = "https://distance-api-url.herokuapp.com/applicationform/postsinghania"
-      var data ={"course":course, "spec":spec, "eligibility":eligibility, "coursemode":coursemode, "duration":duration, "exams":exams, "coursefee":coursefee, "application":application, "examfee":examfee, "persem":persem};
+      var data ={"course":course, "spec":spec, "eligibility":eligibility, "coursemode":coursemode, "duration":duration, "exams":exams, "coursefee":coursefee, "application":application, "examfee":examfee, "persem":persem, "regfee":regfee};
       axios.post(url, data)
       .then(response =>{
           updateMessage(response.data);
@@ -34,6 +35,7 @@ const PostSinghania = () =>{
           pickApplication("");
           pickExamFee("");
           pickPerSem("");
+          pickRegfee("");
       })
     }
 
@@ -161,6 +163,17 @@ const PostSinghania = () =>{
                                         value={persem}
                                         {...register("persem", { required: true })}
                                         onChange={obj=>pickPerSem(obj.target.value)}
+                                        />
+                                    </div>
+                                </div> 
+                                <div className="col-md-4">
+                                    <div className="form-group">
+                                        <label>Registration Fee</label>
+                                        <input type="text" 
+                                        className="form-control" 
+                                        value={regfee}
+                                        {...register("regfee", { required: true })}
+                                        onChange={obj=>pickRegfee(obj.target.value)}
                                         />
                                     </div>
                                 </div> 

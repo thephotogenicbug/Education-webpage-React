@@ -98,6 +98,7 @@ const AnnamalaiUniversity = () =>{
                                 <th>Admission Fees</th>
                                 <th>Exam Fees</th>
                                 <th>Center Fees</th>
+                                <th>Registration Fee</th>
                                 <th>Total Fees</th>
                             </tr>
                         </thead>
@@ -111,6 +112,7 @@ const AnnamalaiUniversity = () =>{
                                        <td>{xdata.admissionfee}</td>
                                        <td>{xdata.examfee}</td>
                                        <td>{xdata.centerfee}</td>
+                                       <td>{xdata.regfee}</td>
                                        <td>{xdata.totalfee}</td>
                                      </tr>
                                  )
