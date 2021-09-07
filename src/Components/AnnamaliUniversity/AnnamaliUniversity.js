@@ -87,7 +87,7 @@ const AnnamalaiUniversity = () =>{
             </div>
             <div className="row">
                <div className="col-md-12 text-center text-primary">
-                   <h2>Annamalai University Structure</h2>
+                   <h2>Available Courses</h2>
                </div>
                  <div className="col-md-4"></div>
                  <div className="col-md-4">
