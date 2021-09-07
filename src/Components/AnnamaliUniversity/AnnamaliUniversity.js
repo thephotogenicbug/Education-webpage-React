@@ -95,6 +95,7 @@ const AnnamalaiUniversity = () =>{
                         <thead>
                             <tr>
                                 <th>Course Name</th>
+                                <th>Specialization</th>
                             </tr>
                         </thead>
                          <tbody>
