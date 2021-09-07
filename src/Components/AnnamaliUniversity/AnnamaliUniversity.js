@@ -104,6 +104,7 @@ const AnnamalaiUniversity = () =>{
                                  return(
                                      <tr key={index}>
                                        <td>{xdata.course}</td>
+                                       <td>{xdata.specz}</td>
                                      </tr>
                                  )
                              })
