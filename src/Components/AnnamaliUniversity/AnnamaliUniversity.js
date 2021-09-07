@@ -94,12 +94,6 @@ const AnnamalaiUniversity = () =>{
                         <thead>
                             <tr>
                                 <th>Course Name</th>
-                                <th>University Fees</th>
-                                <th>Admission Fees</th>
-                                <th>Exam Fees</th>
-                                <th>Center Fees</th>
-                                <th>Registration Fee</th>
-                                <th>Total Fees</th>
                             </tr>
                         </thead>
                          <tbody>
@@ -108,12 +102,6 @@ const AnnamalaiUniversity = () =>{
                                  return(
                                      <tr key={index}>
                                        <td>{xdata.course}</td>
-                                       <td>{xdata.unifee}</td>
-                                       <td>{xdata.admissionfee}</td>
-                                       <td>{xdata.examfee}</td>
-                                       <td>{xdata.centerfee}</td>
-                                       <td>{xdata.regfee}</td>
-                                       <td>{xdata.totalfee}</td>
                                      </tr>
                                  )
                              })
