@@ -35,7 +35,7 @@ export function FooterContainer() {
                 </Footer.Column>
                 <Footer.Column>
                 <Footer.Title></Footer.Title>
-                    <Footer.Link href="https://www.thephotogenicbug.in/" style={{display:'inline'}}><Icon className="fab fa-copyright" /> <span style={{display:'inline'}}>&#169; </span>   thephotogenicbug</Footer.Link>
+                    <Footer.Link href="https://www.thephotogenicbug.in/" style={{fontSize:'14px'}}><Icon className="fab fa-copyright" /> Eduprov Educational Institute 2021 © Copyright : thephotogenicbug</Footer.Link>
                     {/* <Footer.Link href="https://www.instagram.com/eduprov_education/"><Icon className="fab fa-instagram" />Instagram</Footer.Link>
                     <Footer.Link href="https://twitter.com/eduprov"><Icon className="fab fa-twitter" />Twitter</Footer.Link> */}
                 </Footer.Column>
