@@ -91,8 +91,8 @@ const AnnamalaiUniversity = () =>{
                </div>
                  <div className="col-md-3"></div>
                  <div className="col-md-6">
-                 <table className="table table-sm table-bordered text-center">
-                        <thead>
+                 <table className="table table-sm table-bordered  text-center">
+                        <thead className="bg-primary">
                             <tr>
                                 <th>Course Name</th>
                                 <th>Specialization</th>

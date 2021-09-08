@@ -64,7 +64,7 @@ const SinghaniaUniversity = () =>{
                     </div>
                     <div className="col-md-12">
                         <table className="table table-sm table-bordered text-center ">
-                            <thead>
+                            <thead className="bg-primary">
                                     <tr>
                                         <th>Course Name</th>
                                         <th>Specialization</th>
