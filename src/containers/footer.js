@@ -33,6 +33,12 @@ export function FooterContainer() {
                     <Footer.Link href="https://www.instagram.com/eduprov_education/"><Icon className="fab fa-instagram" />Instagram</Footer.Link>
                     <Footer.Link href="https://twitter.com/eduprov"><Icon className="fab fa-twitter" />Twitter</Footer.Link>
                 </Footer.Column>
+                <Footer.Column>
+                <Footer.Title></Footer.Title>
+                    <Footer.Link href="https://www.thephotogenicbug.in/"><Icon className="fab fa-copyright" />thephotogenicbug</Footer.Link>
+                    {/* <Footer.Link href="https://www.instagram.com/eduprov_education/"><Icon className="fab fa-instagram" />Instagram</Footer.Link>
+                    <Footer.Link href="https://twitter.com/eduprov"><Icon className="fab fa-twitter" />Twitter</Footer.Link> */}
+                </Footer.Column>
             </Footer.Row>
             </Footer.Wrapper>
         </Footer>
