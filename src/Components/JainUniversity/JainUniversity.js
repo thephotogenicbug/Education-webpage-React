@@ -61,7 +61,7 @@ const JainUniversity = () => {
                   </div>
                    <div className="col-md-12">
                        <table className="table table-sm table-bordered text-center">
-                           <thead className="bg-primary">
+                           <thead className="bg-primary text-white">
                                <tr>
                                    <th>Program</th>
                                    <th>Duration</th>
