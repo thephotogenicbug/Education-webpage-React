@@ -34,6 +34,7 @@ const PostSinghania = () =>{
           pickApplication("");
           pickExamFee("");
           pickTotalfee("")
+          updateMessage("")
       })
     }
 
