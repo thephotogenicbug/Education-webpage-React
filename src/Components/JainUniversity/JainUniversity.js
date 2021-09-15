@@ -4,7 +4,7 @@ const JainUniversity = () => {
   const [dataitem, updateData] = useState([]);
   const getData = () => {
     const url =
-      "https://distance-api-url.herokuapp.com/applicationform/getjainuniversity";
+      "https://distance-api-url.herokuapp.com/applicationform/getjaindistance";
     fetch(url)
       .then((response) => response.json())
       .then((result) => updateData(result));
@@ -13,6 +13,15 @@ const JainUniversity = () => {
   useEffect(() => {
     getData();
   }, []);
+
+  const [dataonline, updateDataonline] = useState([]);
+  const getDataOnline = () => {
+    const url =
+      "https://distance-api-url.herokuapp.com/applicationform/getjainonline";
+    fetch(url)
+      .then((response) => response.json())
+      .then((result) => updateDataonline(result));
+  };
 
   return (
     <>
@@ -139,6 +148,25 @@ const JainUniversity = () => {
                   <th>Exam Fee</th>
                 </tr>
               </thead>
+              <tbody>
+                {
+                
+                  dataonline.map((data, index)=>{
+                   return (
+                     <tr key={index}>
+                       <td>{data.course}</td>
+                       <td>{data.spec}</td>
+                       <td>{data.skillpartner}</td>
+                       <td>{data.channelpartner}</td>
+                       <td>{data.regfee}</td>
+                       <td>{data.programfeeone}</td>
+                       <td>{data.programfeetwo}</td>
+                       <td>{data.programfeethree}</td>
+                       <td>{data.examfee}</td>
+                     </tr>
+                   );
+              })}
+              </tbody>
             </table>
           </div>
         </div>
